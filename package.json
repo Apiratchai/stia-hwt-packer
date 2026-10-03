@@ -1,0 +1,16 @@
+{
+  "name": "stia-hwt-packer",
+  "version": "1.0.0",
+  "description": "Linux builder for Huawei Stia-format .hwt watch faces; currently targets the HWHD06 280\u00d7456 profile",
+  "scripts": {
+    "art": "python3 make_face.py",
+    "pack": "node pack.js",
+    "build": "python3 make_face.py && node pack.js",
+    "setup": "node scripts/setup.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.6.1",
+    "jimp": "^1.6.1",
+    "protobufjs": "^8.8.0"
+  }
+}
